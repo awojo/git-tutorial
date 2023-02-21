@@ -19,9 +19,9 @@
                 <li>
                     <div class="navgroup">
                         <h2>Background</h2>
-                        <a href="../origin.html">Origin</a>
-                        <a href="../purpose.html">Purpose</a>
-                        <a href="../similar.html">Similar Tools</a>
+                        <a href="../background/origin.html">Origin</a>
+                        <a href="../background/purpose.html">Purpose</a>
+                        <a href="../background/similar.html">Similar Tools</a>
                     </div>
                     <div class="navgroup">
                         <h2>Getting Started</h2>
@@ -32,9 +32,9 @@
                     </div>
                     <div class="navgroup">
                         <h2>Collaboration</h2>
-                        <a href="./collab/sync.html">Synchronization</a>
-                        <a href="./collab/pr.html">Pull Requests</a>
-                        <a href="./collab/mergerebase.html">Merging and Rebasing</a>
+                        <a href="./sync.html">Synchronization</a>
+                        <a href="./pr.html">Pull Requests</a>
+                        <a href="./mergerebase.html">Merging and Rebasing</a>
                     </div>
                     <div class="navgroup">
                         <h2>Advanced</h2>
@@ -45,16 +45,48 @@
             </ol>
         </div>
         <div class="content">
-            <h2>Synchronization</h2>
-            <p>Now that you've gotton through the basics of using Git, it's time to get to the meat and potatoes of what makes Git so useful.</p>
+            <h1>Synchronization</h1>
+            <p>
+                Now that you've gotten through the basics, it's time to get to what makes Git so useful.
+            </p>
             <h2>Git remote</h2>
-            <p>Git repositories are able to contain references to other repositories, and <span class="commandblock">git remote</span> is how you manage these connections. Rather than being direct links to other repositories, these connections can be thought of as bookmarks. They act as shortcuts so that the complete URL is not required for every command involving a remote repository.</p>
-            <p>Primarily, the <span class="commandblock">git remote</span> command provides a way to interact with a repository's <span class="commandblock">./.git/config</span> file. Using the command as is will list all connections made to other repositories. Using the verbose option <span class="commandblock">git remote -v</span> will include the urls.</p>
+            <p>
+                Git repositories are able to contain references to other repositories, and <span class="commandblock">git remote</span> is how you manage these connections. Rather than being direct links to other repositories, these connections can be thought of as bookmarks. They act as shortcuts so that the complete URL is not required for every command involving a remote repository.
+            </p>
+            <p>
+                Primarily, the <span class="commandblock">git remote</span> command provides a way to interact with a repository's <span class="commandblock">./.git/config</span> file. Using the command as is will list all connections made to other repositories. Using the verbose option <span class="commandblock">git remote -v</span> will include the urls.
+            </p>
             <h2>Creating, modifying, and removing connections</h2>
-            <p>Making a connection to another repository is as simple as running the following command: <span class="commandblock">git remote add &lt;name&gt; &lt;url&gt;</span>. Afterwards, the parameter used for <span class="commandblock">&lt;name&gt;</span> can be used as a shortcut to the URL.</p>
-            <p>Similarly, <span class="commandblock">git remote rm &lt;name&gt;</span> can be used to remove a connection, and <span class="commandblock">git remote rename &lt;old-name&gt; &lt;new-name&gt;</span> will rename a connection.</p>
+            <p>
+                Making a connection to another repository is as simple as running the following command: <span class="commandblock">git remote add &lt;name&gt; &lt;url&gt;</span>. Afterwards, the parameter used for <span class="commandblock">&lt;name&gt;</span> can be used as a shortcut to the URL.
+            </p>
+            <p>
+                Similarly, <span class="commandblock">git remote rm &lt;name&gt;</span> can be used to remove a connection, and <span class="commandblock">git remote rename &lt;old-name&gt; &lt;new-name&gt;</span> will rename a connection.
+            </p>
             <h2>Using connections</h2>
-            <p>After creating a remote, its name can be used as an argument to other Git commands, such as <span class="commandblock">git fetch</span> or <span class="commandblock">git push</span>.</p>
+            <p>
+                After creating a remote, its name can be used as an argument to other Git commands, such as <span class="commandblock">git fetch</span> or <span class="commandblock">git push</span>.
+            </p>
+            <p>
+                In order to download the changes that others have made to your repository, the <span class="commandblock">git fetch &lt;remote&gt;</span> command can be used to fetch all commits and files from the remote repository. This command however, will not actually update your working copy. Instead, Git will store these changes in your repository's <span class="commandblock">./.git/objects</span> directory, waiting for you to merge them in.
+            </p>
+            <p>
+                Instead, you can use the <span class="commandblock">git pull &lt;remote&gt;</span> command to do both at once, erasing any uncommitted and in progress work in the process.
+            </p>
+            <p>
+                On the other hand, <span class="commandblock">git push &lt;remote&gt; &lt;branch&gt;</span> is how you upload your changes so that others can fetch them.
+            </p>
+            <h2>GitHub Desktop</h2>
+            <p>
+                This process is heavily streamlined in GitHub's Desktop app, allowing anyone to sync their repository with just a few button presses.
+            </p>
+            <p>
+                If you haven't uploaded your repository to GitHub yet, then Desktop should look similar to this. Note the "Publish repository" button in the top right.
+            </p>
+            <a href="../img/gh-desktop1.png"><img src="../img/gh-desktop1.png" class="center-img"></a>
+            <p>
+                After you have uploaded your repository, that button will say "Fetch origin", which behaves just like the command. If you've made commits that aren't uploaded yet, it will instead say "Push origin".
+            </p>
         </div>
     </div>
 </body>
