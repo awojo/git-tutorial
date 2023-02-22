@@ -68,7 +68,7 @@
                 After creating a remote, its name can be used as an argument to other Git commands, such as <span class="commandblock">git fetch</span> or <span class="commandblock">git push</span>.
             </p>
             <p>
-                In order to download the changes that others have made to your repository, the <span class="commandblock">git fetch &lt;remote&gt;</span> command can be used to fetch all commits and files from the remote repository. This command however, will not actually update your working copy. Instead, Git will store these changes in your repository's <span class="commandblock">./.git/objects</span> directory, waiting for you to merge them in.
+                In order to download the changes that others have made to your repository, the <span class="commandblock">git fetch &lt;remote&gt;</span> command can be used to fetch all commits and files from the remote repository. However, this command will not actually update your working copy. Instead, Git will store these changes in your repository's <span class="commandblock">./.git/objects</span> directory, waiting for you to merge them in.
             </p>
             <p>
                 Instead, you can use the <span class="commandblock">git pull &lt;remote&gt;</span> command to do both at once, erasing any uncommitted and in progress work in the process.
