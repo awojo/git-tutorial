@@ -165,3 +165,22 @@ footer a:hover {
     background-color: rgb(65, 70, 88);
     color: rgb(247, 247, 247);
 }
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+@media only screen and (max-width: 480px) {
+    .columns {
+        flex-direction: column;
+    }
+    .sidebar {
+        text-align: center;
+    }
+    .center-img {
+        width: 100%;
+    }
+}
