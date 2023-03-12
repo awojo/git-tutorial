@@ -15,10 +15,12 @@ a:visited {color: whitesmoke;}
 
 a:hover {color: darkorange; font-size: 16pt;}
 
-img {max-width: 85%; object-fit: contain;}
+img {max-width: 85%; object-fit: contain; display: block; margin-left: auto; margin-right: auto; width: 40%;}
 
 
 h1 { text-align: center;}
+
+h2 { text-align: left; font-size: 16pt; }
 
 
 h3 {text-align: center;
@@ -29,7 +31,7 @@ h4 { text-align: center;
 font-size: 16pt;
  }
 
-h5 { text-align: center }
+h5 { text-align: center; font-size: 14pt; }
 
 h6 {text-align: left;
 font-size: 14pt;}
