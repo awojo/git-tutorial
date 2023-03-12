@@ -1,18 +1,21 @@
 body {
 
-	border: solid 30px whitesmoke;
-	margin: 30px;
-	Padding: 50px;
+	border: solid 10px black;
+	margin: 20px;
+	Padding: 30px;
 	font-family: "Lato", sans-serif;
     background-color: rgb(65, 70, 88);
     color: rgb(247, 247, 247);
 	font-size: 14pt;}
+
 	
 a:link {  color: whitesmoke;
 }
 a:visited {color: whitesmoke;}
 
 a:hover {color: darkorange; font-size: 16pt;}
+
+img {max-width: 85%; object-fit: contain;}
 
 
 h1 { text-align: center;}
