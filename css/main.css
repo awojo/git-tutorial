@@ -173,6 +173,14 @@ footer a:hover {
     width: 85%;
 }
 
+.center-img-tall {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 320px;
+}
+
 @media only screen and (max-width: 480px) {
     .columns {
         flex-direction: column;
@@ -181,6 +189,9 @@ footer a:hover {
         text-align: center;
     }
     .center-img {
+        width: 100%;
+    }
+    .center-img-tall {
         width: 100%;
     }
 }
