@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Git Tutorial</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="topbar">
+        <h1><a href="../index.html">Git Tutorial</a></h1>
+    </div>
+    <div class="columns">
+        <div class="sidebar">
+            <ol>
+                <li>
+                    <div class="navgroup">
+                        <h2>Background</h2>
+                        <a href="../origin.html">Origin</a>
+                        <a href="../purpose.html">Purpose</a>
+                        <a href="../similar.html">Similar Tools</a>
+                    </div>
+                    <div class="navgroup">
+                        <h2>Getting Started</h2>
+                        <a href="../started/install.html">Installation</a>
+                        <a href="../started/commit.html">Committing</a>
+                        <a href="../started/branches.html">Branches</a>
+                        <a href="../started/history.html">Editing History</a>
+                    </div>
+                    <div class="navgroup">
+                        <h2>Collaboration</h2>
+                        <a href="../collab/sync.html">Synchronization</a>
+                        <a href="../collab/pr.html">Pull Requests</a>
+                        <a href="../collab/mergerebase.html">Merging and Rebasing</a>
+                    </div>
+                    <div class="navgroup">
+                        <h2>Advanced</h2>
+                        <a href="./sub.html">Submodules and Subtrees</a>
+                        <a href="./log.html">Log</a>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <div class="content">
+            <h1>Viewing the Log</h1>
+            <p>
+                A simple and common command with a world of options.
+            </p>
+            <h2>Git Log</h2>
+            <p>
+                At its core, <span class="commandblock">git log</span> will display information about each commit present in the history. We will look at a few flags to modify the output.
+            </p>
+            <h2>Formatting</h2>
+            <p>
+                Often, it is useful to see a more detailed description of how a repository has changed over time. The <span class="commandblock">--stat</span> flag will display the number of insertions and deletions to the content of files within each commit. Using <span class="commandblock">-p</span> produces a similar result, but displays the changes themselves too.
+            </p>
+            <p>
+                On the other hand, it may be more beneficial to have a more compact display of the history. This can be done with <span class="commandblock">--oneline</span>, which limits each commit to a single line of output. For a little more information, <span class="commandblock">--decorate</span> will show which commits are the heads of each branch.
+            </p>
+            <h2>Displaying Visually</h2>
+            <p>
+                In a repository with multiple active branches, it would be helpful to see what branches each commit belong to. The <span class="commandblock">--graph</span> flag will present each branch as a vertical line with asterisks to represent which branch each commit belongs to.
+            </p>
+            <h2>Shortlog</h2>
+            <p>
+                The output can be further simplified, and formatted at the same time, with a similar command: <span class="commandblock">git shortlog</span>. This command is particularly useful for creating summaries of the work that has been done. It accepts nearly all flags and options that <span class="commandblock">git log</span> does.
+            </p>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../catalog.html">Catalog</a>
+    <a href="../references.html">References</a>
+</footer>
+
+</html>
