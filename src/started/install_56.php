@@ -13,6 +13,7 @@
             <p>Also, check out this video on Youtube for a demo on how to create your new repository:</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/JBW6-5_RhUU" title="YouTube video player" class="center-img" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h3><a href="/src/started/install.php">Return to the Getting Started with Git Checklist</a></h3>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>

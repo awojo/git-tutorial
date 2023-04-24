@@ -45,6 +45,7 @@
             <p>
                 After you have uploaded your repository, that button will say "Fetch origin", which behaves just like the command. If you've made commits that aren't uploaded yet, it will instead say "Push origin".
             </p>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>

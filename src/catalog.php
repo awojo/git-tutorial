@@ -3,7 +3,7 @@
     <?php include_once("header.php"); ?>
     <main>
         <article>
-            <a href="/src/started/install.html"><h2>Getting Started</h2></a>
+            <a href="/src/started/install.php"><h2>Getting Started</h2></a>
             <p>Here you can find how to install Git, and the basics of using it.</p>
             <a href="/src/collab/sync.php"><h2>Collaboration</h2></a>
             <p>While Git can be used for solo projects, its real strength shines when working together.</p>

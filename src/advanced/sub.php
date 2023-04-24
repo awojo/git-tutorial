@@ -24,6 +24,7 @@
             <p>
                 The command <span class="commandblock">git subtree add --prefix &lt;directory&gt; &lt;URL&gt; &lt;branch&gt; --squash</span> will clone the repository into <span class="commandblock">directory</span> and add a merge commit to the branch's history. Afterwards, the subtree can be updated with <span class="commandblock">git subtree pull --prefix &lt;directory&gt; &lt;URL&gt; &lt;branch&gt; --squash</span>.
             </p>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>

@@ -33,6 +33,7 @@
             </p>
             <iframe width="400" height="300" src="https://www.youtube.com/embed/e2IbNHi4uCI" class="center-img" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
             </iframe>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>

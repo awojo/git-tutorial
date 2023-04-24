@@ -23,6 +23,7 @@
             <p>
                 Once a pull request has been made, anyone can comment on the newly created thread to make suggestions, critiques, etc. New commits can be made to the pull request to fix errors or add relavent improvements. Once the requested changes are in a good state, the pull request may be merged in by one of the repository's maintainers.
             </p>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>

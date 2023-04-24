@@ -9,6 +9,7 @@
             <p>Click on the download button on the GitHub Desktop page: <a href="https://desktop.github.com/" target="_blank">GitHub Desktop Download</a> and open the install package from the destination folder.</p>
             <p>If you encounter any install errors on macOS, please reference the workaround mentioned on our page which walked you through the install for Git: <a href="/src/started/install_2.php">Git install for mac OS</a></p>
             <h3><a href="/src/started/install.php">Return to the Getting Started with Git Checklist</a></h3>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>

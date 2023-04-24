@@ -26,6 +26,7 @@
 			</p>
             <iframe width="400" height="300" src="https://www.youtube.com/embed/wkJ4leOuK_o" class="center-img" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
             </iframe>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>

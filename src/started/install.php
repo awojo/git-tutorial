@@ -55,6 +55,7 @@
                     </td>
                 </tr>
             </table>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>

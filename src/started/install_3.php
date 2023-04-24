@@ -11,6 +11,7 @@
             <a href="/img/Git download for Windows page.png"><img src="/img/Git download for Windows page.png" alt="Git website image" class="center-img"></a>
             <p>Notice that the Windows download page begins with the explanation that you will need to choose from one of the available installers, for which they provide links to those packages.</p>
             <h3><a href="/src/started/install.php">Return to the Getting Started with Git Checklist</a></h3>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>

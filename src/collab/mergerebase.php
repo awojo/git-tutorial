@@ -34,6 +34,7 @@
                 The option to rebase is located within the branch label, rather than the previous menu. 
             </p>
             <a href="/img/gh-desktop-rebase.png"><img src="/img/gh-desktop-rebase.png" class="center-img-tall"></a>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>

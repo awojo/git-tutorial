@@ -26,6 +26,7 @@
             <p>
                 The output can be further simplified, and formatted at the same time, with a similar command: <span class="commandblock">git shortlog</span>. This command is particularly useful for creating summaries of the work that has been done. It accepts nearly all flags and options that <span class="commandblock">git log</span> does.
             </p>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>

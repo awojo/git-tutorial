@@ -12,6 +12,7 @@
             <h3><a href="/src/started/install_2.php">Installing Git on macOS</a></h3>
             <h3><a href="/src/started/install_3.php">Installing Git on Windows</a></h3>
             <h3><a href="/src/started/install.php">Return to the Getting Started with Git Checklist</a></h3>
+            <?php include_once("../comments.php"); ?>
         </article>
         <?php include_once("../sidebar.php"); ?>
     </main>
