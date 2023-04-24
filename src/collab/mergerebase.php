@@ -1,44 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Git Tutorial</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
+<?php include_once("../head.php"); ?>
 <body>
-    <div class="topbar">
-        <h1><a href="../index.html">Git Tutorial</a></h1>
-    </div>
-    <div class="columns">
-        <div class="sidebar">
-            <ol>
-                <li>
-                    <div class="navgroup">
-                        <h2>Getting Started</h2>
-                        <a href="../started/install.html">Installation</a>
-                        <a href="../started/commit.html">Committing</a>
-                        <a href="../started/branches.html">Branches</a>
-                        <a href="../started/history.html">Editing History</a>
-                    </div>
-                    <div class="navgroup">
-                        <h2>Collaboration</h2>
-                        <a href="./sync.html">Synchronization</a>
-                        <a href="./pr.html">Pull Requests</a>
-                        <a href="./mergerebase.html">Merging and Rebasing</a>
-                    </div>
-                    <div class="navgroup">
-                        <h2>Advanced</h2>
-                        <a href="../advanced/sub.html">Submodules and Subtrees</a>
-                        <a href="../advanced/log.html">Log</a>
-                    </div>
-                </li>
-            </ol>
-        </div>
-        <div class="content">
+    <?php include_once("../header.php"); ?>
+    <main>
+        <article>
             <h1>Merging and Rebasing</h1>
             <p>
                 Both are methods of combining changes from one branch to another.
@@ -65,21 +29,13 @@
             <p>
                 Merging is trivial when using Desktop with the help of the button at the bottom of the branch menu.
             </p>
-            <a href="../img/gh-desktop-merge.png"><img src="../img/gh-desktop-merge.png" class="center-img-tall"></a>
+            <a href="/img/gh-desktop-merge.png"><img src="/img/gh-desktop-merge.png" class="center-img-tall"></a>
             <p>
                 The option to rebase is located within the branch label, rather than the previous menu. 
             </p>
-            <a href="../img/gh-desktop-rebase.png"><img src="../img/gh-desktop-rebase.png" class="center-img-tall"></a>
-        </div>
-    </div>
+            <a href="/img/gh-desktop-rebase.png"><img src="/img/gh-desktop-rebase.png" class="center-img-tall"></a>
+        </article>
+        <?php include_once("../sidebar.php"); ?>
+    </main>
+    <?php include_once("../footer.php"); ?>
 </body>
-
-<footer>
-    <a href="../index.html">Home</a>
-    <a href="../about.html">About</a>
-    <a href="../catalog.html">Catalog</a>
-    <a href="../references.html">References</a>
-    <a href="../feedback.html">Feedback</a>
-</footer>
-
-</html>

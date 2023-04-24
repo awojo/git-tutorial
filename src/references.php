@@ -1,29 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Git Tutorial</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
+<?php include_once("head.php"); ?>
 <body>
-    <div class="topbar">
-        <h1><a href="./index.html">Git Tutorial</a></h1>
-    </div>
-    <div class="title-container">
-        <h2 class="title">References</h2>
-    </div>
-    <div class="columns content-color">
-        <div class="center">
+    <?php include_once("header.php"); ?>
+    <main>
+        <article>
             <h2>Andrew Wojciechowski</h2>
             <p>Reference #1: S. Shacon, "git," git-scm. [Online]. Available: https://git-scm.com/docs. [Accessed Feb. 22, 2023].</p>
             <p>Reference #2: "Become a git guru," Atlassian. [Online]. Available: https://www.atlassian.com/git/tutorials. [Accessed Feb. 21, 2023].</p>
             <p>Reference #3: "Git Tutorial," W3Schools. [Online]. Available: https://www.w3schools.com/git/default.asp. [Accessed Feb. 19, 2023].</p>
-        </div>
-        <div class="center">
+
             <h2>Mary Allen</h2>
             <p>Reference #1: Git website, Scott Chacon / Jason Long. https://git-scm.com/ (accessed February 4, 2023)</p>
             <p>Reference #2: GitHub Desktop Online Site © 2023 GitHub, Inc. https://desktop.github.com/ (accessed February 4, 2023)</p>
@@ -34,9 +18,6 @@
             <p>Reference #7: Youtube: “Western Michigan University Fight Song- “WMU Fight Song” from “Hydra” Youtube account. Broncos fight song:  https://youtu.be/XopczapZros (accessed March 13, 2023)</p>
             <p>Reference #8: Youtube: “Create a new repository with GitHub Desktop | GitHub Desktop Tutorial 2022” from “Talking tech with Techielass” Youtube account. https://youtu.be/JBW6-5_RhUU (accessed March 11, 2023)</p>
 
-
-        </div>
-        <div class="center">
             <h2>Noah Caballero</h2>
             <p>Reference #1: Youtube: "Create Repository, Commit, and Push using GitHub Desktop" from "Guillermo Sanchez" Youtube account. https://youtu.be/PvUexC0-D2s (accesed March 11, 2023)</p>                                                                      
             <p>Reference #2: Youtube: "How to show the history of a Git file" from "Cameron McKenzie" Youtube account. https://www.youtube.com/watch?v=wkJ4leOuK_o  (accesed March 2, 2023)</p>                                                                      </p>
@@ -44,16 +25,8 @@
             <p>Reference #4: GitHub Docs @ 2023 GitHub, Inc. https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches (accessed feburary 29, 2023)</p>
             <p>Reference #5: GitHub Docs @ 2023 GitHub, Inc. https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/viewing-the-branch-history (accessed march 2, 2023) </p>
             <p>Reference #6: GitHub Docs @ 2023 GitHub, Inc. https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits (accessed feburary 24, 2023) </p>
-        </div>
-    </div>
+        </article>
+        <?php include_once("sidebar.php"); ?>
+    </main>
+    <?php include_once("footer.php"); ?>
 </body>
-
-<footer>
-    <a href="./index.html">Home</a>
-    <a href="./about.html">About</a>
-    <a href="./catalog.html">Catalog</a>
-    <a href="./references.html">References</a>
-    <a href="./feedback.html">Feedback</a>
-</footer>
-
-</html>

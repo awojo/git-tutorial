@@ -1,44 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Git Tutorial</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
+<?php include_once("../head.php"); ?>
 <body>
-    <div class="topbar">
-        <h1><a href="../index.html">Git Tutorial</a></h1>
-    </div>
-    <div class="columns">
-        <div class="sidebar">
-            <ol>
-                <li>
-                    <div class="navgroup">
-                        <h2>Getting Started</h2>
-                        <a href="../started/install.html">Installation</a>
-                        <a href="../started/commit.html">Committing</a>
-                        <a href="../started/branches.html">Branches</a>
-                        <a href="../started/history.html">Editing History</a>
-                    </div>
-                    <div class="navgroup">
-                        <h2>Collaboration</h2>
-                        <a href="../collab/sync.html">Synchronization</a>
-                        <a href="../collab/pr.html">Pull Requests</a>
-                        <a href="../collab/mergerebase.html">Merging and Rebasing</a>
-                    </div>
-                    <div class="navgroup">
-                        <h2>Advanced</h2>
-                        <a href="./sub.html">Submodules and Subtrees</a>
-                        <a href="./log.html">Log</a>
-                    </div>
-                </li>
-            </ol>
-        </div>
-        <div class="content">
+    <?php include_once("../header.php"); ?>
+    <main>
+        <article>
             <h1>Viewing the Log</h1>
             <p>
                 A simple and common command with a world of options.
@@ -62,16 +26,8 @@
             <p>
                 The output can be further simplified, and formatted at the same time, with a similar command: <span class="commandblock">git shortlog</span>. This command is particularly useful for creating summaries of the work that has been done. It accepts nearly all flags and options that <span class="commandblock">git log</span> does.
             </p>
-        </div>
-    </div>
+        </article>
+        <?php include_once("../sidebar.php"); ?>
+    </main>
+    <?php include_once("../footer.php"); ?>
 </body>
-
-<footer>
-    <a href="../index.html">Home</a>
-    <a href="../about.html">About</a>
-    <a href="../catalog.html">Catalog</a>
-    <a href="../references.html">References</a>
-    <a href="../feedback.html">Feedback</a>
-</footer>
-
-</html>
